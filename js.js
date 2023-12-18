@@ -81,3 +81,15 @@ deleteButton.onclick = () => {
         render();
     }
 }
+function convert(){
+    console.info("loading...")
+    for(let i = 0; i < arr.length; i++){
+        const elm = arr[i];
+        const pattern = new RegExp(elm.name, `g${elm.ignore ? "i" : ""}`);
+        if(elm.check){
+            textArea.value = textArea.value.replaceAll(pattern, elm.replace);
+        }
+    }
+    textArea.value = textArea.value.trim();
+    console.clear();
+}
