@@ -38,4 +38,5 @@ render();
 addButton.onclick = () => {
     const newItemName = prompt("write item name or change item name");
     const newItemRepl = prompt("write item replacer");
+    if(confirm(`add Item name ${newItemName} and replacer ${newItemRepl}?`)){}
 }
