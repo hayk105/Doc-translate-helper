@@ -35,3 +35,4 @@ function render(){
     })
 }
 render();
+addButton.onclick = () => {}
