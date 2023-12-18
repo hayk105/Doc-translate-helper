@@ -71,4 +71,13 @@ deleteButton.onclick = () => {
         }
     }
     console.clear()
+    if(index ===undefined){
+        alert("can't find item")
+        return;
+    }
+    if(confirm(`delete item name=${arr[index].name} and value=${arr[index].replace} ?`)){
+        arr.splice(index, 1);
+        localStorage.setItem("dataReplace", JSON.stringify(arr));
+        render();
+    }
 }
