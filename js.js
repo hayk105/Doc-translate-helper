@@ -55,7 +55,7 @@ addButton.onclick = () => {
                 check: true,
                 ignore: false,
             })
-            tableElm.innerHTML += `<td>${newItemName}</td><td>${newItemRepl}</td><td><input type="checkbox" checked></td><input type="checkbox" class="ignoreCase ignoreCase" checked></td>`
+            tableElm.innerHTML += `<td>${newItemName}</td><td>${newItemRepl}</td><td><input type="checkbox" checked></td><td><input type="checkbox" class="ignoreCase ignoreCase" checked></td>`
         }
         localStorage.setItem("dataReplace", JSON.stringify(arr));
     }
