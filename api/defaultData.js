@@ -1,0 +1,98 @@
+export  default [
+    {
+        name: "կույտ",
+        replace: "կույտ(stack)",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "բաղադրիչ",
+        replace: "Կոմպոնենտ",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "միջերես",
+        replace: "ինտերֆեյս",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "պիտակ",
+        replace: "թեգ",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "շրջանակ",
+        replace: "շրջանակ(framework)",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "ուղի",
+        replace: "ուղի(path)",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "վստահված անձը",
+        replace: "proxy",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "լռելյայն",
+        replace: "լռելյայն(default)",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "Գեթսբի",
+        replace: "Gatsby",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "ներմուծում",
+        replace: "import",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "արտահանում",
+        replace: "export",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "հաճախորդ",
+        replace: "հաճախորդ(client)",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "ներմուծման",
+        replace: "ներմուծման(import)",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "արտահանման",
+        replace: "արտահանման(export)",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "ռեեստրից",
+        replace: "registry",
+        check: true,
+        ignore: false,
+    },
+    {
+        name: "«Բարև, աշխարհ»",
+        replace: "'Hello World!'",
+        check: true,
+        ignore: false,
+    },
+];
