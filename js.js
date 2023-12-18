@@ -35,4 +35,7 @@ function render(){
     })
 }
 render();
-addButton.onclick = () => {}
+addButton.onclick = () => {
+    const newItemName = prompt("write item name or change item name");
+    const newItemRepl = prompt("write item replacer");
+}
