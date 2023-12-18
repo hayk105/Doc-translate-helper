@@ -93,3 +93,9 @@ function convert(){
     textArea.value = textArea.value.trim();
     console.clear();
 }
+document.getElementById("replace").onclick = () => convert;
+document.addEventListener("keypress", (e) => {
+    if(e.key == "Enter"){
+        convert();
+    }
+})
