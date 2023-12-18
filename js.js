@@ -20,7 +20,18 @@ function render(){
         tableElm.innerHTML += `<tr>${td(arr[i])}</tr>`
     }
     document.querySelectorAll(".checkBox, .ignoreCase").forEach((el, i) => {
-        el.addEventListener('click', (e) => {})
+        el.addEventListener('click', (e) => {
+            const data = i % 2 == 0 ? "check" : "ignore";
+            const checked=  e.target.checked;
+            const index = ~~(i/2); //Math.floor
+            if(checked){
+                arr[index][data] = true;
+            }
+            else{
+                arr[index][data] = false;
+            }
+            localStorage.setItem("dataReplace", JSON.stringify(arr));
+        })
     })
 }
 render();
