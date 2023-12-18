@@ -11,5 +11,13 @@ const textArea = document.querySelector("textarea")
 
 function render(){
     tableElm.innerHTML = ""
+    
+    function td(node){
+        return `<td>${node.name}</td><td>${node.replace}</td><td><input type="checkbox" class="checkBox" ${node.check ? "checked" : ""}></td><td><input type="checkbox" class="ignoreCase" ${node.ignore ? "checked" : ""}></td>`
+    }
+
+    for(let i = 0; i < arr.length; i++){
+        tableElm.innerHTML += `<tr>${td(arr[i])}</tr>`
+    }
 }
 render();
