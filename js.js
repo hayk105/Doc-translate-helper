@@ -60,4 +60,15 @@ addButton.onclick = () => {
         localStorage.setItem("dataReplace", JSON.stringify(arr));
     }
 }
-deleteButton.onclick = () => {}
+deleteButton.onclick = () => {
+    const nameItem = prompt("write name item (delete it?)")
+    let index;
+    console.log("loading...")
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i].name === nameItem){
+            index = i;
+            break;
+        }
+    }
+    console.clear()
+}
