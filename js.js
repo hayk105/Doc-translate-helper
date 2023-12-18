@@ -60,3 +60,4 @@ addButton.onclick = () => {
         localStorage.setItem("dataReplace", JSON.stringify(arr));
     }
 }
+deleteButton.onclick = () => {}
